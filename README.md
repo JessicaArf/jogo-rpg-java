@@ -1,5 +1,5 @@
-#Elastech
-Este repositório foi criado para realizar o projeto de POO do #Elastech, onde foi proposto resolvermos o exercício utilizando a linguagem Java para praticarmos POO.
+<h1 align="center"><strong>#Elastech</strong></h1>
+Este repositório foi criado para realizar o projeto de POO do #Elastech, onde foi proposto resolvermos o exercício utilizando a linguagem Java para praticarmos POO. 
 
 Crie um jogo de RPG simples em Java, onde o jogador interage com o sistema por
 meio do console. Na classe principal JogoRPG, um objeto Jogo é criado e o método
@@ -20,31 +20,34 @@ como adicionar mais classes de personagens, itens, habilidades especiais, entre
 outros.
 
 Detalhe das Classes (Não precisa necessariamente ser assim)
-1. Classe JogoRPG:
+<ol>
+<li> Classe JogoRPG:
    a. Método main(String[] args): É o ponto de entrada do programa. Cria uma
    instância da classe Jogo e inicia o jogo chamando o método
-   iniciarJogo().
-2. Classe Jogo:
+   iniciarJogo().</li>
+<li> Classe Jogo:
    a. Atributos jogador e inimigo: Representam o jogador e o inimigo no jogo.
    b. Método Jogo(): Construtor da classe que inicializa um jogador e um
    inimigo.
    c. Método iniciarJogo(): Controla o fluxo do jogo, permitindo que o jogador
    escolha sua classe e inicie uma batalha contra um inimigo.
+</li>
 
-3. Classe Jogador:
+<li> Classe Jogador:
    a. Atributos vida e ataque: Representam a quantidade de vida e o poder
    de ataque do jogador.
    b. Método Jogador(): Construtor que inicializa os atributos do jogador.
    c. Método atacar(Inimigo inimigo): Permite que o jogador ataque o inimigo,
    reduzindo sua vida.
    d. Método estaVivo(): Verifica se o jogador está vivo com base em sua
-   vida atual.
+   vida atual. </li>
 
-4. Classes Guerreiro e Mago (subclasses de Jogador):
+<li> Classes Guerreiro e Mago (subclasses de Jogador):
    a. Métodos Guerreiro() e Mago(): Construtores que inicializam os atributos
    específicos de cada classe de jogador.
+</li>
 
-5. Classe Inimigo:
+<li> Classe Inimigo:
    a. Atributos vida e ataque: Representam a quantidade de vida e o poder
    de ataque do inimigo.
    b. Método Inimigo(): Construtor que inicializa os atributos do inimigo.
@@ -52,3 +55,5 @@ Detalhe das Classes (Não precisa necessariamente ser assim)
    reduzindo sua vida.
    d. Método estaVivo(): Verifica se o inimigo está vivo com base em sua vida
    atual.
+   </li>
+</ol>
