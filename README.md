@@ -21,38 +21,38 @@ outros.
 
 Detalhe das Classes (Não precisa necessariamente ser assim)
 <ol>
-<li> Classe JogoRPG:
+<li> Classe JogoRPG:<br/>
    a. Método main(String[] args): É o ponto de entrada do programa. Cria uma
    instância da classe Jogo e inicia o jogo chamando o método
-   iniciarJogo().</li>
-<li> Classe Jogo:
-   a. Atributos jogador e inimigo: Representam o jogador e o inimigo no jogo.
+   iniciarJogo().</li><br/>
+<li> Classe Jogo:<br/>
+   a. Atributos jogador e inimigo: Representam o jogador e o inimigo no jogo.<br/>
    b. Método Jogo(): Construtor da classe que inicializa um jogador e um
-   inimigo.
+   inimigo.<br/>
    c. Método iniciarJogo(): Controla o fluxo do jogo, permitindo que o jogador
    escolha sua classe e inicie uma batalha contra um inimigo.
-</li>
+</li><br/>
 
-<li> Classe Jogador:
+<li> Classe Jogador:<br/>
    a. Atributos vida e ataque: Representam a quantidade de vida e o poder
-   de ataque do jogador.
-   b. Método Jogador(): Construtor que inicializa os atributos do jogador.
+   de ataque do jogador.<br/>
+   b. Método Jogador(): Construtor que inicializa os atributos do jogador.<br/>
    c. Método atacar(Inimigo inimigo): Permite que o jogador ataque o inimigo,
-   reduzindo sua vida.
+   reduzindo sua vida.<br/>
    d. Método estaVivo(): Verifica se o jogador está vivo com base em sua
-   vida atual. </li>
+   vida atual. </li><br/>
 
-<li> Classes Guerreiro e Mago (subclasses de Jogador):
+<li> Classes Guerreiro e Mago (subclasses de Jogador):<br/>
    a. Métodos Guerreiro() e Mago(): Construtores que inicializam os atributos
    específicos de cada classe de jogador.
 </li>
-
-<li> Classe Inimigo:
+<br/>
+<li> Classe Inimigo:<br/>
    a. Atributos vida e ataque: Representam a quantidade de vida e o poder
-   de ataque do inimigo.
-   b. Método Inimigo(): Construtor que inicializa os atributos do inimigo.
-   c. Método atacar(Jogador jogador): Permite que o inimigo ataque o jogador,
-   reduzindo sua vida.
+   de ataque do inimigo.<br/>
+   b. Método Inimigo(): Construtor que inicializa os atributos do inimigo.<br/>
+   c. Método atacar(Jogador jogador): Permite que o inimigo ataque o jogador,<br/>
+   reduzindo sua vida.<br/>
    d. Método estaVivo(): Verifica se o inimigo está vivo com base em sua vida
    atual.
    </li>

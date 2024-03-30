@@ -1,7 +1,17 @@
+import java.util.Random;
+
 public class Inimigo extends Jogador{
 
     public Inimigo() {
-        super(200, 15,8);
+        super(100, 15, 10);
     }
+
+    public int escolherAcaoInimigo() {
+        Random random = new Random();
+        int escolhaInimigo = random.nextInt(2) + 1;
+        return escolhaInimigo;
+    }
+
+
 
 }
