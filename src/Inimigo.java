@@ -12,6 +12,4 @@ public class Inimigo extends Jogador{
         return escolhaInimigo;
     }
 
-
-
 }

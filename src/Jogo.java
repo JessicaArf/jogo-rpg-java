@@ -56,21 +56,23 @@ public class Jogo {
             } else if (escolhaJogador == 1 && escolhaInimigo == 2) {
                 System.out.println("------------------------------------");
                 System.out.println("O inimigo se defendeu do seu ataque!");
+                System.out.println("------------------------------------");
             } else if (escolhaJogador == 2 && escolhaInimigo == 1) {
-                System.out.println("-----------------");
-                System.out.println("Você se defendeu!");
+                System.out.println("----------------------------------------------");
+                System.out.println("O inimigo tentou te atacar e você se defendeu!");
+                System.out.println("----------------------------------------------");
             } else if (escolhaJogador == 2 && escolhaInimigo == 2) {
-                System.out.println("-----------------");
-                System.out.println("Você se defendeu!");
                 System.out.println("-----------------------------");
+                System.out.println("Você se defendeu!");
                 System.out.println("O inimigo também se defendeu!");
+                System.out.println("-----------------------------");
             }
         }
 
         if (jogador.statusVida()) {
-            System.out.println("--------------------------------");
+            System.out.println("----------------------------------");
             System.out.println("Parabéns!!! Você venceu a batalha!");
-            System.out.println("--------------------------------");
+            System.out.println("----------------------------------");
         } else {
             System.out.println("-------------------");
             System.out.println("Você foi derrotado!");
@@ -78,3 +80,4 @@ public class Jogo {
         }
     }
 }
+

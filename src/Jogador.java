@@ -76,8 +76,8 @@ public class Jogador {
     }
 
     public void mudarValorAtaque(Inimigo inimigo) {
-        int[] ataquesJogador = {10, 15, 20};
-        int[] ataquesInimigo = {5, 15, 20};
+        int[] ataquesJogador = {15, 20, 25};
+        int[] ataquesInimigo = {10, 15, 20};
         int escolhaAtaqueJogador = (int) (Math.random() * ataquesJogador.length);
         int escolhaAtaqueInimigo = (int) (Math.random() * ataquesInimigo.length);
         int ataqueEscolhidoJogador = ataquesJogador[escolhaAtaqueJogador];
@@ -91,15 +91,15 @@ public class Jogador {
         int dano = ataque - ((inimigo.getDefesa() * ataque) / 100);
         vidaInimigo -= dano;
         inimigo.setVida(vidaInimigo);
-        if (ataque == 10) {
+        if (ataque == 15) {
             System.out.println("---------------------------------------------------------------------------");
             System.out.println("Você atacou o inimigo com um golpe leve e tirou " + dano + " pontos de vida.");
             System.out.println("---------------------------------------------------------------------------");
-        } else if (ataque == 15) {
+        } else if (ataque == 20) {
             System.out.println("-----------------------------------------------------------------------------------");
             System.out.println("Você atacou o inimigo com uma explosão moderada e tirou " + dano + " pontos de vida.");
             System.out.println("-----------------------------------------------------------------------------------");
-        } else if (ataque == 20) {
+        } else if (ataque == 25) {
             System.out.println("-----------------------------------------------------------------------------");
             System.out.println("Você atacou o inimigo com um golpe fatal e tirou " + dano + " pontos de vida.");
             System.out.println("------------------------------------------------------------------------------");
@@ -111,7 +111,7 @@ public class Jogador {
         int dano = inimigo.getAtaque() - ((jogador.getDefesa() * inimigo.getAtaque()) / 100);
         vidaJogador -= dano;
         jogador.setVida(vidaJogador);
-        if (inimigo.getAtaque() == 5) {
+        if (inimigo.getAtaque() == 10) {
             System.out.println("--------------------------------------------------------------------------");
             System.out.println("O inimigo te atacou com um golpe leve e tirou " + dano + " pontos de vida.");
             System.out.println("--------------------------------------------------------------------------");

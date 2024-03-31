@@ -1,7 +1,7 @@
 public class Mago extends Jogador{
     private static String nomeClasse = "Mago";
     public Mago() {
-        super(100, 20,15);
+        super(100, 15,15);
     }
     public Mago(String nome) {
         super(100, 20,8, nome);
