@@ -68,14 +68,17 @@ public class Jogo {
                 System.out.println("-----------------------------");
             }
         }
-
         if (jogador.statusVida()) {
             System.out.println("----------------------------------");
-            System.out.println("Parabéns!!! Você venceu a batalha!");
+            System.out.println("\u001B[32m" + "Parabéns!!! Você venceu a batalha!" + "\u001B[0m");
             System.out.println("----------------------------------");
-        } else {
+        } else if(jogador.getVida() <= 0 && inimigo.getVida() > 0) {
             System.out.println("-------------------");
-            System.out.println("Você foi derrotado!");
+            System.out.println("\u001B[31m" + "Você foi derrotado!" + "\u001B[0m");
+            System.out.println("-------------------");
+        } else if(jogador.getVida() <= 0 && inimigo.getVida() <= 0){
+            System.out.println("-------------------");
+            System.out.println("Empate!");
             System.out.println("-------------------");
         }
     }

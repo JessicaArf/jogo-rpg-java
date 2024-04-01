@@ -1,11 +1,11 @@
 public class Guerreiro extends Jogador {
     private static String nomeClasse = "Guerreiro";
     public Guerreiro() {
-        super(100, 15, 12);
+        super(80, 10, 15);
     }
 
     public Guerreiro(String nome) {
-        super(100, 15, 20, nome);
+        super(80, 10, 15, nome);
     }
 
     public static String getNomeClasse() {
