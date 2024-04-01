@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Jogador {
     private int vida;
     private int ataque;
@@ -15,6 +16,7 @@ public class Jogador {
         this.defesa = defesa;
     }
 
+
     public Jogador(int vida, int ataque, int defesa, String nome) {
         this.vida = vida;
         this.ataque = ataque;
@@ -22,41 +24,52 @@ public class Jogador {
         this.nome = nome;
     }
 
+
     public Jogador() {
 
+
     }
+
 
     public int getVida() {
         return vida;
     }
 
+
     public void setVida(int vida) {
         this.vida = vida;
     }
+
 
     public int getAtaque() {
         return ataque;
     }
 
+
     public void setAtaque(int ataque) {
         this.ataque = ataque;
     }
+
 
     public int getDefesa() {
         return defesa;
     }
 
+
     public void setDefesa(int defesa) {
         this.defesa = defesa;
     }
+
 
     public String getNome() {
         return nome;
     }
 
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 
     public int escolherAcao() {
         System.out.println("------------------");
@@ -66,9 +79,11 @@ public class Jogador {
         System.out.println("------------------");
         int escolha = 0;
 
+
         while (true) {
             Scanner scanner = new Scanner(System.in);
             escolha = scanner.nextInt();
+
 
             if (escolha >= 1 && escolha <= 2) {
                 break;
@@ -78,6 +93,7 @@ public class Jogador {
         }
         return escolha;
     }
+
 
     public void mudarValorAtaque(Inimigo inimigo) {
         int[] ataquesJogador = {5, 10, 20};
@@ -90,10 +106,11 @@ public class Jogador {
         inimigo.setAtaque(ataqueEscolhidoInimigo);
     }
 
+
     public void atacar(Inimigo inimigo) {
         int vidaInimigo = inimigo.getVida();
         int dano = ataque - ((inimigo.getDefesa() * ataque) / 100);
-        dano+=random.nextInt(9) + 1;
+        dano += random.nextInt(9) + 1;
         vidaInimigo -= dano;
         inimigo.setVida(vidaInimigo);
         if (ataque == 5) {
@@ -111,10 +128,11 @@ public class Jogador {
         }
     }
 
+
     public void atacar(Jogador jogador, Inimigo inimigo) {
         int vidaJogador = jogador.getVida();
         int dano = inimigo.getAtaque() - ((jogador.getDefesa() * inimigo.getAtaque()) / 100);
-        dano+=random.nextInt(9) + 1;
+        dano += random.nextInt(9) + 1;
         vidaJogador -= dano;
         jogador.setVida(vidaJogador);
         if (inimigo.getAtaque() == 5) {
@@ -135,6 +153,7 @@ public class Jogador {
         }
     }
 
+
     public void mostrarAtributosPersonagem(String nomeClasse) {
         System.out.println("-------------------------");
         System.out.println("Classe: " + nomeClasse);
@@ -143,8 +162,9 @@ public class Jogador {
         System.out.println("Defesa: " + defesa + "%");
     }
 
+
     public boolean statusVida() {
         return vida > 0;
     }
-
 }
+

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Inimigo extends Jogador{
+public class Inimigo extends Jogador {
 
     public Inimigo() {
         super(80, 10, 10);
